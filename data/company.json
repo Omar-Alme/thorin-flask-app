@@ -1,0 +1,41 @@
+[{
+    "name": "Real Madrid (14 Titles)",
+    "description": "Real Madrid Club de Fútbol, commonly referred to as Real Madrid, is a Spanish professional football club based in Madrid. The club competes in La Liga, the top tier of Spanish football.In domestic football, the club has won 69 trophies;a record 35 La Liga titles,20 Copa del Rey, 12 Supercopa de España,a Copa Eva Duarte, and a Copa de la Liga. In European football, Real Madrid have won a record 21 trophies a record 14 European Cup / UEFA Champions League titles, two UEFA Cups,and a record five UEFA Super Cups.",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Real_Madrid_C.F._the_Winner_Of_The_Champions_League_in_2018_%281%29.jpg/1024px-Real_Madrid_C.F._the_Winner_Of_The_Champions_League_in_2018_%281%29.jpg",
+    "url": "realmadrid"
+  },
+  {
+    "name": "Liverpool (6 Titles)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut venenatis tellus in metus vulputate eu scelerisque felis.Et odio pellentesque diam volutpat commodo sed egestas egestas.Quis lectus nulla at volutpat diam ut.Sit amet purus gravida quis.Vel pretium lectus quam id.Felis donec et odio pellentesque diam volutpat commodo.Elit sed vulputate mi sit amet mauris commodo quis.Lacinia at quis risus sed vulputate.Eu mi bibendum neque egestas congue quisque egestas.",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_53.jpg/800px-Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_53.jpg",
+    "url": "liverpool"
+
+  },
+  {
+    "name": "AC Milan (6 Titles)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut venenatis tellus in metus vulputate eu scelerisque felis.Et odio pellentesque diam volutpat commodo sed egestas egestas.Quis lectus nulla at volutpat diam ut.Sit amet purus gravida quis.Vel pretium lectus quam id.Felis donec et odio pellentesque diam volutpat commodo.Elit sed vulputate mi sit amet mauris commodo quis.Lacinia at quis risus sed vulputate.Eu mi bibendum neque egestas congue quisque egestas.",
+    "image_source": "https://api.internationalchampionscup.com/v1/storage/8f43f70b-370a-4dfd-947f-d566881db315",
+    "url": "acmilan"
+
+  },
+  {
+    "name": "Bayern Munich (6 Titles)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut venenatis tellus in metus vulputate eu scelerisque felis.Et odio pellentesque diam volutpat commodo sed egestas egestas.Quis lectus nulla at volutpat diam ut.Sit amet purus gravida quis.Vel pretium lectus quam id.Felis donec et odio pellentesque diam volutpat commodo.Elit sed vulputate mi sit amet mauris commodo quis.Lacinia at quis risus sed vulputate.Eu mi bibendum neque egestas congue quisque egestas.",
+    "image_source": "https://pbs.twimg.com/media/EgInJqgXYAE3yfv?format=jpg&name=4096x4096",
+    "url": "bayernmunich"
+  },
+  {
+    "name": "FC Barcelona (5 Titles)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut venenatis tellus in metus vulputate eu scelerisque felis.Et odio pellentesque diam volutpat commodo sed egestas egestas.Quis lectus nulla at volutpat diam ut.Sit amet purus gravida quis.Vel pretium lectus quam id.Felis donec et odio pellentesque diam volutpat commodo.Elit sed vulputate mi sit amet mauris commodo quis.Lacinia at quis risus sed vulputate.Eu mi bibendum neque egestas congue quisque egestas.",
+    "image_source": "https://media.npr.org/assets/img/2015/09/16/ap_364259823894-84670d95e515120b5d3561210b2782e706f63ef3.jpg",
+    "url": "fcbarcelona"
+
+  },
+  {
+    "name": "Ajax (3 Titles)",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut venenatis tellus in metus vulputate eu scelerisque felis.Et odio pellentesque diam volutpat commodo sed egestas egestas.Quis lectus nulla at volutpat diam ut.Sit amet purus gravida quis.Vel pretium lectus quam id.Felis donec et odio pellentesque diam volutpat commodo.Elit sed vulputate mi sit amet mauris commodo quis.Lacinia at quis risus sed vulputate.Eu mi bibendum neque egestas congue quisque egestas.",
+    "image_source": "https://i.dailymail.co.uk/i/pix/2015/07/31/12/2AFC981E00000578-3181159-image-a-21_1438342940867.jpg",
+    "url": "ajax"
+
+  }
+]

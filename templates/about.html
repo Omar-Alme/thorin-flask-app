@@ -1,4 +1,126 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>About Page</h1>
+
+{% for number in list_of_numbers %}
+<p>{{number}}</p>
+{% endfor %}
+
+<h2>{{page_title}}</h2>
+<p>The UEFA Champions League (previously known as the European Cup, abbreviated as UCL, or sometimes, UEFA CL) is an
+  annual club association football competition organised by the Union of European Football Associations (UEFA) and
+  contested by top-division European clubs, deciding the competition winners through a round robin group stage to
+  qualify for a double-legged knockout format, and a single leg final. It is the most-watched club competition in the
+  world and the third most-watched football competition overall, behind only the UEFA European Championship and the FIFA
+  World Cup. It is one of the most prestigious football tournaments in the world and the most prestigious club
+  competition in European football, played by the national league champions (and, for some nations, one or more
+  runners-up) of their national associations.</p>
+
+{%for member in company%}
+
+<div class="row featurette">
+
+  {% if loop.index % 2 != 0 %}
+
+  <div class="col-md-7">
+    <h3><a href="/about/{{member.url}}">{{loop.index}}. {{member.name}}</a></h3>
+    <p>{{member.description}}</p>
+  </div>
+  <div class="col-md-5">
+    <img src="{{member.image_source}}" class="featurette-image image-responsive">
+  </div>
+
+  {%else%}
+
+  <div class="col-md-5">
+    <img src="{{member.image_source}}" class="featurette-image image-responsive">
+  </div>
+  <div class="col-md-7">
+    <h3><a href="/about/{{member.url}}">{{loop.index}}. {{member.name}}</a></h3>
+    <p>{{member.description}}</p>
+  </div>
+
+  {% endif %}
+
+</div>
+
+{% if loop.index != loop.length %}
+
+<hr class="featurette-divider">
+
+{% endif %}
+
+{% endfor %}
+
+<!-- <div class=" row featurette">
+  <div class="col-md-5">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_53.jpg/800px-Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_53.jpg"
+      alt="Liverpool final champions">
+  </div>
+  <div class="col-md-7">
+    <h3>Liverpool (6 Titles)</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis. Et odio pellentesque diam volutpat
+      commodo sed egestas egestas. Quis lectus nulla at volutpat diam ut. Sit amet purus gravida quis. Vel pretium
+      lectus quam id. Felis donec et odio pellentesque diam volutpat commodo. Elit sed vulputate mi sit amet mauris
+      commodo quis. Lacinia at quis risus sed vulputate. Eu mi bibendum neque egestas congue quisque egestas.</p>
+  </div>
+</div>
+<div class="row featurette">
+  <div class="col-md-7">
+    <h3>AC Milan (6 Titles)</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis. Et odio pellentesque diam volutpat
+      commodo sed egestas egestas. Quis lectus nulla at volutpat diam ut. Sit amet purus gravida quis. Vel pretium
+      lectus quam id. Felis donec et odio pellentesque diam volutpat commodo. Elit sed vulputate mi sit amet mauris
+      commodo quis. Lacinia at quis risus sed vulputate. Eu mi bibendum neque egestas congue quisque egestas.
+    </p>
+  </div>
+  <div class="col-md-5">
+    <img src="https://api.internationalchampionscup.com/v1/storage/8f43f70b-370a-4dfd-947f-d566881db315"
+      alt="Ac Milan final champions">
+  </div>
+</div>
+<div class="row featurette">
+  <div class="col-md-5">
+    <img src="https://pbs.twimg.com/media/EgInJqgXYAE3yfv?format=jpg&name=4096x4096" alt="Liverpool final champions">
+  </div>
+  <div class="col-md-7">
+    <h3>Bayern Munich (6 Titles)</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis. Et odio pellentesque diam volutpat
+      commodo sed egestas egestas. Quis lectus nulla at volutpat diam ut. Sit amet purus gravida quis. Vel pretium
+      lectus quam id. Felis donec et odio pellentesque diam volutpat commodo. Elit sed vulputate mi sit amet mauris
+      commodo quis. Lacinia at quis risus sed vulputate. Eu mi bibendum neque egestas congue quisque egestas.</p>
+  </div>
+</div>
+<div class="row featurette">
+  <div class="col-md-7">
+    <h3>FC Barcelona (5 Titles)</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis. Et odio pellentesque diam volutpat
+      commodo sed egestas egestas. Quis lectus nulla at volutpat diam ut. Sit amet purus gravida quis. Vel pretium
+      lectus quam id. Felis donec et odio pellentesque diam volutpat commodo. Elit sed vulputate mi sit amet mauris
+      commodo quis. Lacinia at quis risus sed vulputate. Eu mi bibendum neque egestas congue quisque egestas.
+    </p>
+  </div>
+  <div class="col-md-5">
+    <img src="https://media.npr.org/assets/img/2015/09/16/ap_364259823894-84670d95e515120b5d3561210b2782e706f63ef3.jpg"
+      alt="FC Barcelona final champions">
+  </div>
+</div>
+<div class="row featurette">
+  <div class="col-md-5">
+    <img src="https://i.dailymail.co.uk/i/pix/2015/07/31/12/2AFC981E00000578-3181159-image-a-21_1438342940867.jpg"
+      alt="Ajax final champions">
+  </div>
+  <div class="col-md-7">
+    <h3>Ajax (3 Titles)</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis. Et odio pellentesque diam volutpat
+      commodo sed egestas egestas. Quis lectus nulla at volutpat diam ut. Sit amet purus gravida quis. Vel pretium
+      lectus quam id. Felis donec et odio pellentesque diam volutpat commodo. Elit sed vulputate mi sit amet mauris
+      commodo quis. Lacinia at quis risus sed vulputate. Eu mi bibendum neque egestas congue quisque egestas.</p>
+  </div>
+</div> -->
 {% endblock %}
